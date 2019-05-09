@@ -1,0 +1,460 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+img{
+cursor:pointer;
+}
+
+#map_canvas{
+	cursor:auto;
+}
+/*   #########################  BODY  #####################       */
+body{
+	margin:0;
+	font-family:verdana;
+	font-size:12px;
+}
+
+.transparente{
+	background-color:#FFF;
+	border:#FFF;
+	width:300px;
+}
+
+.tituloNome{
+	color:#FF0000;
+	line-height:20px;
+}
+
+/*   #########################  TOPOOO  #####################       */
+#topoFaixa{
+	width:100%;
+	height:5px;
+	background-color:#F95402;
+}
+
+#topo{
+	width:100%;
+	height:64px;
+	background-image:url(../imagens/bg_topo.jpg);
+}
+
+#topoDireita{
+	height:40px;
+	float:right;
+	margin-top:12px;
+	margin-right:10px;
+	padding-top:5px;
+}
+
+#topoDireitaIcones{
+	height:40px;
+	float:right;
+	margin-top:12px;
+	margin-right:10px;
+}
+
+#topoEsquerda{
+	width:300px;
+	height:55px;
+	background-image:url(../imagens/logoTopo.png);
+	background-repeat:no-repeat;
+	margin-left:10px;
+	margin-top:3px;
+}
+
+/*   #########################  MENU  #####################       */
+#menu{
+	width:100%;
+	height:60px;
+	background-image:url(../imagens/bg_menu.jpg);
+	font-size:11px;
+}
+
+#menu img{
+	margin-bottom:3px;
+}
+
+#menuLinks{
+	width:100%;
+	height:24px;
+	background-color:#EF682C;
+}
+
+.menu ul.menubar{
+  margin: 0px;
+  padding:0px;
+  height:60px;
+}
+ 
+.menu ul.menubar .submenu{
+  margin: 0px;
+  padding: 0px;
+  padding-left:25px;
+  padding-right:25px;
+  list-style: none;
+  float:left;
+  height:60px;
+  background-image:url(../imagens/tracoMenu.png);
+  background-repeat:no-repeat;
+  background-position:right;
+}
+ 
+.menu ul.menubar ul.menu{
+  width: 100%;
+  display: none;
+  position: absolute;
+  left:0px;
+  margin: 0px;
+  margin-top:2px;
+}
+ 
+.menu ul.menubar a{
+  padding: 5px;
+  display:block;
+  text-decoration: none;
+  padding: 5px;
+  color: #FFF;
+  text-align:center;
+}
+ 
+.menu ul.menu, ul.menu ul{
+  margin: 0;
+  padding: 0;
+  width: 300px; /* Width of Menu Items */
+  background-color: #EF682C; /* IE6 Bug */
+}
+ 
+.menu ul.menu li{
+  position: relative;
+  list-style: none;
+  border: 0px;
+  float:left;
+}
+ 
+.menu ul.menu li a{	
+  display: block;
+  text-decoration: none;
+  border-bottom: 0px;
+  padding: 5px 15px 5px 15px;
+  font-size:12px;
+}
+
+.menu ul.menubar li:hover{
+	background-color:#EF682C;
+}
+ 
+.menu ul.menu li sup{
+  font-weight:bold;
+  font-size:7px;
+  color: red;
+}
+ 
+/* Fix IE. Hide from IE Mac \*/
+* html ul.menu li { float: left; height: 1%;  }
+* html ul.menu li a { font-size:12px;  }
+/* End */
+ 
+.menu ul.menu ul{
+  position: absolute;
+  display: none;
+  left: 149px; /* Set 1px less than menu width */
+  top: 0px;
+}
+ 
+.menu ul.menu li.submenu ul { display: none;} /* Hide sub-menus initially */
+
+.certo ul.menu li.submenu ul { display: none;} /* Hide sub-menus initially */
+ 
+.menu ul.menu li.submenu { background: transparent url(arrow.gif) right center no-repeat;}
+ 
+.menu ul.menu li a:hover {
+	background-color:#FF905F;
+}
+
+/*   #########################  CORPO  #####################       */
+#corpo{
+	width:100%-20px;
+	background-image:url(../imagens/bg_conteudo.gif);
+	padding-left:20px;
+	padding-right:20px;
+	font-size:13px;
+}
+
+/*   #########################  RODAPE  #####################       */
+#rodape{
+	background-image:url(../imagens/bg_rodape.jpg);
+	width:100%;
+	height:40px;
+}
+
+/*   #########################  CARREGANDO  #####################       */
+#carregando{
+	position:fixed;
+	position:absolute;
+	width:100%;
+	height:150px;
+	top:50%;
+	margin-top:-75px;
+	background-image:url(../imagens/carregando.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+	z-index:10;
+	opacity: 0.4;
+    color: #000000;
+    background-color:#333;
+	display:none;
+}
+
+/*   #########################  TEXTOS PARA O CONTEÚDO  #####################       */
+.titulo{
+	font-size:18px;
+	color:#9B2038;
+	line-height:40px;
+}
+
+.tituloCorpo{
+	color:#D86D1E;
+	font-size:12px;
+	width:300px;
+	line-height:20px;
+	font-weight:700;
+}
+/*formulários*/
+.formulario{
+	background-color:#EDF1F5;
+	padding: 2px;
+	border: solid 1px #000;
+	font-size:11px;
+	font-family:verdana;
+	margin-top:5px;
+	float:left;
+	margin-right:5px;
+}
+
+.formularioBaixo{
+	background-color:#EDF1F5;
+	padding: 2px;
+	border: solid 1px #000;
+	font-size:11px;
+	font-family:verdana;
+	margin-top:5px;
+	float:left;
+	margin-right:5px;
+}
+
+.formularioSemEspaco{
+	background-color:#EDF1F5;
+	padding: 2px;
+	border: solid 1px #000;
+	font-size:11px;
+	font-family:verdana;
+	margin-top:5px;
+}
+
+.formularioSemEspaco:hover{
+	background: #D2D2FF;
+}
+
+.formulario:hover{
+	background: #D2D2FF;
+}
+
+.label{
+	float:left;
+	width:120px;
+	padding:2px;
+	margin-top:5px;
+}
+
+br{
+clear: left;
+}
+
+.botao{
+	font-size:11px;
+	font-weight:700;
+	border:none;
+	background:url(../imagens/btn_up.png) no-repeat top left;
+	padding:2px 8px;
+	width:68px;
+	height:22px;
+	margin-bottom:10px;
+}
+
+.botao:hover{
+	font-size:11px;
+	font-weight:700;
+	border:none;
+	background:url(../imagens/btn_down.png) no-repeat top left;
+	padding:2px 8px;
+	width:68px;
+	height:22px;
+}
+
+.invisivel{
+	color:red;
+	background-color:transparent;
+	border: 1px none;
+}
+
+/*   #########################  DIV ERROR  #####################       */
+#erro{
+	border:#FF3300 solid 1px;
+	display:none;
+}
+/*   #########################  TABELA  #####################       */
+
+.listaTable{
+		border-collapse:collapse;
+		background:#EFF4FB url(../imagens/table_teaser.gif) repeat-x;
+		border-left:1px solid #686868;
+		border-right:1px solid #686868;
+		color: #333;
+		font-size:11px;
+}
+
+.listaTable td, th {
+		padding:5px;
+		padding-left:20px;
+		padding-right:20px;
+		text-align:center;
+}
+
+.listaTable caption {
+		padding: 0 0 .5em 0;
+		text-align: left;
+		font-size: 1.4em;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #333;
+		background: transparent;
+}
+
+/* =links
+
+----------------------------------------------- */
+
+.listaTable a{
+		color:#950000;
+		text-decoration:none;
+}
+
+.listaTable a:link {}
+
+.listaTable a:visited {
+		font-weight:normal;
+		color:#666;
+		text-decoration: line-through;
+}
+
+.listaTable a:hover {
+		border-bottom: 1px dashed #bbb;
+}
+
+/* =head =foot
+----------------------------------------------- */
+
+.listaTable thead th, tfoot th, tfoot td {
+		background:#333 url(../imagens/table_llsh.gif) repeat-x;
+		color:#fff
+}
+
+.listaTable tfoot td {
+		text-align:right
+}
+
+/* =body
+----------------------------------------------- */
+
+.listaTable tbody th, tbody td {
+		border-bottom: dotted 1px #333;
+}
+
+.listaTable tbody th {
+		white-space: nowrap;
+}
+
+.listaTable tbody th a {
+		color:#333;
+}
+
+.odd {	}
+
+.listaTable tbody tr:hover {
+		background:#fafafa
+}
+
+/*#################        CLIENTES CONTATO ESQUERDA E DIREITA         ####################*/
+#contatos{
+	width:100%;
+	display:table;
+	background:#003366;
+	position:relative;
+	background:url(../imagens/bg_conteudo.gif);
+}
+
+#contatoLado{
+	width:300px;
+	position:relative;
+	min-height:300px;
+	float:left;
+	margin-right:10px;
+	background:url(../imagens/bg_conteudo.gif);
+}
+
+/*#################       ETIQUETA ANIVERSARIANTES       #############################*/
+#etiqueta{
+	min-height:72px;
+	width:189px;
+	height:72px;
+	float:left;
+	margin-right:3px;
+	margin-bottom:3px;
+	border:#000000 solid thin;
+	font-size:10px;
+}
+
+#imprimiEtiqueta{
+	width:100%;
+	height:100%;
+}
+
+#informacoesGeraisEsquerda{
+	width:400px;
+	float:left;
+}
+
+#informacoesGeraisDireita{
+	width:600px;
+	float:left;
+}
+
+#cidadeEsquerda{
+	width:500px;
+	float:left;
+}
+
+#cidadeDireita{
+	width:300px;
+	float:left;
+}
+
+/*#################       IMPRIMIR          #############################*/
+@media print{
+	#menu{
+		display:none;
+	}
+	#rodape{
+		display:none;
+	}
+	#topo{
+		display:none;
+	}
+	#corpo{
+		display:none;
+	}
+	#imprimiEtiqueta{
+		display:block;
+	}
+}
